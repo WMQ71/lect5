@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> CSS</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Tahoma, sans-serif;
+    }
+
+    body {
+      background: #f7f7f7;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #333;
+      color: #fff;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 15px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 20px;
+      background: #fff;
+    }
+
+    .hero-text {
+      width: 50%;
+    }
+
+    .hero img {
+      width: 40%;
+      border-radius: 8px;
+      float: left;
+    }
+
+    .features {
+      background: #eee;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .feature {
+      display: inline-block;
+      width: 30%;
+      background: #fff;
+      margin: 10px;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #333;
+      color: #fff;
+      padding: 10px 20px;
+      margin-top: 15px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background: #ffd700;
+      color: #000;
+    }
+
+    footer {
+      text-align: center;
+      direction: ltr;
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .overflow-box {
+      background: #fff3cd;
+      width: 200px;
+      height: 80px;
+      overflow: auto;
+      padding: 10px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo"> موقعي</div>
+    <nav>
+      <a href="#">الرئيسية</a>
+      <a href="#">مميزات</a>
+      <a href="#">تواصل</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>مرحبًا بك في موقعي</h1>
+      <p>هذا مثال فيه خصائص CSS المطلوبة.</p>
+      <a href="#" class="btn">ابدأ الآن</a>
+    </div>
+    <img src="css3.png" alt="صورة تجريبية">
+  </section>
+
+  <section class="features">
+    <div class="feature">ميزة 1</div>
+    <div class="feature">ميزة 2</div>
+    <div class="feature">ميزة 3</div>
+  </section>
+
+  <div class="overflow-box">
+    هذا نص طويل للتجربة... سيظهر شريط تمرير عند زيادة المحتوى عن مساحة الصندوق.
+  </div>
+
+  <footer>
+    &copy; All rights reserved for ENG.Watheq Almurisi.
+  </footer>
+
+</body>
+
+</html>
